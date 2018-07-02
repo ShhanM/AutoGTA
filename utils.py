@@ -1,0 +1,2 @@
+CLASS_NUM = 4
+IMG_SIZE = 224

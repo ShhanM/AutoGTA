@@ -9,8 +9,7 @@ pywin32按键在游戏中不响应需要底层驱动级（？）控制，Winio�
 
 ### 2018/04/21
 
-win32api.keybd_event() 方法不能直接向游戏发送键盘数据，因为大多数游戏都使用Directinput响应键盘和鼠标的输入，从github上pygta5项目中发现解决方案：
-使用ctypes.windll.user32.SendInput() 方法。
+win32api.keybd_event() 方法不能直接向游戏发送键盘数据，因为大多数游戏都使用Directinput响应键盘和鼠标的输入，从github上pygta5项目中发现解决方案：使用ctypes.windll.user32.SendInput() 方法。
 
 ### 2018/05/12
 
@@ -39,4 +38,10 @@ win32api.keybd_event() 方法不能直接向游戏发送键盘数据，因为大
 - control.py
 
   游戏控制模块，包含预测函数（使用模型预测）和控制函数（调用directkeys.py 中的 PressKey、ReleaseKey 向游戏发送数据）
+
+### 2018/06/25
+
+未完成
+
+
 
